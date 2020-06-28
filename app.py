@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return "Namaskar Mandali...!!"
+    return "Namaskar Mandali... _^_ !!"
 
 @app.route("/aditi")
 def aditi():
@@ -13,8 +13,8 @@ def aditi():
 
 @app.route("/angad")
 def angad():
-    return "Namaskar Angad !! :) "
+    return "Namaskar Angad _^_ !! :) "
 
 @app.route("/<string:name>")
 def namaskar(name):
-    return f"Namaskar, {name}!"
+    return f"Namaskar, {name} _^_ !"
