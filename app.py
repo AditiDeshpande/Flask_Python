@@ -5,7 +5,8 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return "Namaskar Mandali... _^_ !!"
+    return " (Marathi) Namaskar Mandali... "+" (मराठी) _^_ नमस्कार मंडळी "+" (German) Hallo Leute!! "+" (English) Hello People!! "
+
 
 @app.route("/aditi")
 def aditi():
