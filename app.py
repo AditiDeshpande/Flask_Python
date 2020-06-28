@@ -18,4 +18,5 @@ def angad():
 
 @app.route("/<string:name>")
 def namaskar(name):
-    return f"Namaskar, {name} _^_ !"
+    name = name.capitalize()
+    return f"<h1>Namaskar, {name} _^_ !<h1>"
