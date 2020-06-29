@@ -1,11 +1,10 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title>My Website!!</title>
-    </head>
-    <body>
-        <h1>Exercise</h1>
+{% extends "layout.html" %}
+
+{% block heading %}
+    Exercise !!!!
+{% endblock %}
+
+{% block body %}
         <p>
             Exercise : <br><br>
             Exercise is very important thing.<br><br> It is basic need same like food , clothing , shelter.<br><br>
@@ -18,6 +17,4 @@
         <!--Foll line means I want the url for more function the one
             which we defined in python file-->
         <a href="{{ url_for('more') }}">See More...</a>
-
-    </body>
-</html>
+{% endblock %}
