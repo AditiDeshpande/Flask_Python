@@ -11,7 +11,11 @@ def index():
 #The method is not allowed for the requested URL.
 #bcoz here we defined methods POST and when we hit url directly it is GET methods
 #so it's a mismatch that's why not allowed
-@app.route("/hello" , methods=["POST"])
+#solution methods=["GET" , "POST"] output : Hello , None without if else conditions
+@app.route("/hello" , methods=["GET" , "POST"])
 def hello():
-    name = request.form.get("name")
-    return render_template("hello.html" , name=name)
+    if request.method == "GET":
+        return "Please submit the form instead.."
+    else:
+        name = request.form.get("name")
+        return render_template("hello.html" , name=name)
