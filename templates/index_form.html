@@ -5,6 +5,8 @@
 {% endblock %}
 
 {% block body %}
+<!--if we do method="get" form still get's submitted but data will be visible in url
+which is not secure-->
     <form action="{{ url_for('hello') }}" method="post">
         <input type="text" name="name" placeholder="Enter Your Name">
         <button>Submit</button>
